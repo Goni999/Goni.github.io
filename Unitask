@@ -1,5 +1,16 @@
 // 유니테스크에 대해
 // 코루틴과 Task의 중간 성격
+// async와 await에 대한 이해가 선행되어야한다.
+// async는 중단과 대기가 가능한 상태로 만들어주는 c# 키워드
+
+//
+// async UniTask는 해당 테스크가 종료되기를 기다릴 때 사용
+// async UniTask<TResult>는 제네릭 버전으로 반환 값을 받아서 진행하고 싶을 때 사용
+// async UniTaskVoid는 테스크를 실행은 하되 반환 값이 없고 결과도 기다릴 필요가 없을 때 사용
+
+// 코루틴에 yield return이 있다면 UniTask에는 await가 있다.
+// await는 async 키워드와 쌍으로 있어야한다.
+// 테스크 중단 재개 시점이 되는 곳
 
 #include<iostream>
 using namespace std;
